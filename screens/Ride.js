@@ -32,8 +32,8 @@ export default class RideScreen extends Component {
     const { status } = await Permissions.askAsync(Permissions.CAMERA);
 
     this.setState({
-      /*status === "granted" is true when user has granted permission
-          status === "granted" is false when user has not granted the permission
+      /*status === "granted" es "true" cuando el usuario ha dado permiso
+          status === "granted" es false cuando el usuario no ha dado permiso
         */
       hasCameraPermissions: status === "granted",
       domState: "scanner",
@@ -65,11 +65,11 @@ export default class RideScreen extends Component {
   };
 
   assignBike = () => {
-    console.log("You have rented the bike for next 1 hour. Enjoy your ride!!");
+    console.log("Has rentado la bicicleta por la próxima 1 hora. ¡Disfruta tu viaje!");
   };
 
   returnBike = () => {
-    console.log("We hope you enjoyed your ride");
+    console.log("Esperamos que hayas disfrutado tu viaje");
   };
 
   render() {
@@ -110,14 +110,14 @@ export default class RideScreen extends Component {
               style={styles.scanbutton}
               onPress={() => this.getCameraPermissions()}
             >
-              <Text style={styles.scanbuttonText}>Scan</Text>
+              <Text style={styles.scanbuttonText}>Escanear</Text>
             </TouchableOpacity>
           </View>
           <TouchableOpacity
             style={[styles.button, { marginTop: 25 }]}
             onPress={this.handleTransaction}
           >
-            <Text style={styles.buttonText}>Unlock</Text>
+            <Text style={styles.buttonText}>Desbloquear</Text>
           </TouchableOpacity>
         </View>
       </View>
