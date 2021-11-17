@@ -1,2 +1,2 @@
-# PRO-C71-PROJECT
-After Class Project solution for PRO-C71
+# PRO-C71-PROYECTO
+Solución de proyecto después de clase PRO-C71
